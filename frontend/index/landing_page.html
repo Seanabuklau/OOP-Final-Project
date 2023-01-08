@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Remittance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="..\css\styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg py-2 navbar-light" id="navbar-main">
+    <div class="container">
+      <a class="navbar-brand" href="#">TechG</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="landing_page.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.techg.com.sg/">About</a>
+          </li>
+        </ul>
+        <button class="btn btn-outline-success" type="submit" onclick="location.href='login_page.html'">Login <i class="fa-solid fa-right-to-bracket"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- landing page -->
+  <div class="landing-page vh-90 d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="title">
+            <h5>Welcome to</h5>
+            <h1>Next Generation Remittance</h1>
+            <p>Experience smooth cross border remittance only with Tech G</p>
+          </div>
+          <div class="landing-page-btn">
+            <a href="signup_page.html" class="btn btn-lg btn-warning" type="button" id="sign-up-btn">Sign Up <i class="fa-solid fa-user"></i></a>
+            <a href="login_page.html" class="btn btn-lg btn-primary" type="button" id='send-money-btn'>Send Remittance <i class="fa-solid fa-paper-plane"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <img src="..\sources\techg iphone.png" height="700" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class='footer-text'>© IS442 OOP Project Group 1</p>
+  </footer>
+  <script src="..\scripts\app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

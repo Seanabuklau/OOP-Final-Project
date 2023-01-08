@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mapping</title>
+  <link rel="stylesheet" href="..\css\styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body class="mapping-body">
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg py-2 navbar-light" id="navbar-main">
+    <div class="container">
+      <a class="navbar-brand" href="#">TechG</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="landing_page.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.techg.com.sg/">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="upload.html">Mapping</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="transactions.html">Transaction</a>
+          </li>
+        </ul>
+        <button class="btn btn-outline-danger" type="submit" onclick="logOut()">Logout <i class="fa-solid fa-door-open"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- mapping table -->
+  <div id="app" class="container mt-4">
+
+    <div class="row">
+      <!-- submit button to submit mappings -->
+      <div class="col text-center m-4">
+        <button type="button" class="btn btn-secondary" @click="submitMapping">Submit Mapping</button>
+      </div>
+
+      <!-- alert if saving mapping went wrong -->
+      <div id="mapUploadWrong" class="alert alert-danger m-4" role="alert" style="display: none;">
+        Error occurred while saving mappings.
+      </div>
+
+      <!-- alert if mapping was successful -->
+      <div id="mapUploadCorrect" class="alert alert-success m-4" role="alert" style="display: none;">
+        Mappings was successfully saved.
+        <br>
+        <a href="transactions.html" class="btn btn-lg btn-primary" type="button" id='send-money-btn'>Send Remittance<i class="fa-solid fa-paper-plane"></i></a>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <!-- ssot mapping section -->
+      <div class="col-8 p-2" style="background-color: #e9e9e986;">
+        <!--header-->
+        <div class="row px-2">
+          <div class="col bg-dark text-white text-center p-1 m-1">
+            <h5>SSOT Fields</h5>
+          </div>
+          <div class="col bg-dark text-white text-center p-1 m-1">
+            <h5>Mapped Fields</h5>
+          </div>
+        </div>
+
+        <!--fixed ssot form-->
+        <div class="row" v-for="ssot in SSOTfields">
+          <!-- display ssot fields -->
+          <div class="col">
+            <div class="card text-center">
+              <h5 class="card-text p-2">{{ssot}}</h5>
+            </div>
+          </div>
+          <!-- area for dropping cu fields -->
+          <div class="col mapped-field" :id="ssot" @dragenter="dragEnter(ssot)" @dragOver="dragOver" @dragleave="dragLeave(ssot)" @drop="dragDrop(ssot)">
+          </div>
+        </div>
+      </div>
+
+      <!--company fields section-->
+      <div class="col-4 p-2" id="cu-section" @dragOver="dragOver" @drop="dragDropRemoval">
+        <!--header-->
+        <div class="row px-2">
+          <div class="col bg-dark text-white text-center p-1 m-1">
+            <h5>Company Fields</h5>
+          </div>
+        </div>
+
+        <!-- content -->
+        <div class="row-auto" v-for="cu in CUfields">
+          <!-- company fields field -->
+          <div class="col">
+            <div class="cu-field card text-center d-flex" draggable="true" :id="cu" @dragstart="dragStart(cu)" @dragend="dragEnd()">
+              <h5 class="card-text p-2">{{cu}}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+    </div>
+  </div>
+
+  <div class="navbar fixed-bottom">
+    <p class='footer'>© IS442 OOP Project Group 1</p>
+  </div>
+  <script src="https://unpkg.com/vue@3"></script>
+  <script src="..\scripts\mapping.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+### Get Validations By SSOT and Remittance Company
+POST  http://localhost:8080/api/validations/ssot HTTP/1.1
+Content-Type: application/json
+
+{
+    "companyName": "FinanceNow",
+    "ssotField" : "ReceiverCountry"
+}

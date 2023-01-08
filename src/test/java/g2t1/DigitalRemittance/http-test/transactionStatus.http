@@ -1,0 +1,15 @@
+### Get Transaction Status By ID
+POST http://localhost:8080/api/transaction/status HTTP/1.1
+Content-Type: application/json
+
+{
+    "transactionID" : "1"
+}
+
+### Get All Transactions Statuses
+POST http://localhost:8080/api/transaction/all HTTP/1.1
+Content-Type: application/json
+
+{
+    "transactionIDs": ["1", "2", "3"]
+}

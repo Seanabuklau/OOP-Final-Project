@@ -1,0 +1,317 @@
+/* navbar */
+#navbar-main {
+  background-color: #e3f2fd;
+}
+
+/* landing page*/
+.container{
+  font-family: 'Roboto', sans-serif;
+}
+
+.title {
+  margin-top: 15%;
+  font-family: 'Sora', sans-serif;
+  margin-left: 2.5rem;
+}
+
+.landing-page-btn{
+  margin-left: 2.5rem;
+}
+
+#sign-up-btn {
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+  margin-top: 0.6rem;
+}
+
+#send-money-btn {
+  font-size: 1.1rem;
+  margin-left: 0.5rem;
+  margin-top: 0.6rem;
+}
+
+/* Login page */
+h3 {
+  padding-bottom: 1rem;
+}
+
+form {
+  max-width: 25%;
+  margin: auto;
+}
+
+#username-box {
+  margin: 0.5rem 0;
+}
+
+.remember-me {
+  padding: 1rem 0;
+}
+
+.login-btn {
+  background-color:#0d6efd;
+	border-radius:5px;
+  border: none;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:8px 14px;
+	text-decoration:none;
+}
+
+.login-btn:hover {
+	background-color:#476e9e;
+}
+.login-btn:active {
+	position:relative;
+	top:1px;
+}
+
+/* Signup page */
+.logo-centre{
+  display: block;
+  text-align: center;
+}
+
+.signup-page-form{
+  padding: 2rem;
+  font-weight: bold;
+  background-color: #EAEAEA;
+}
+
+.signup-page-form div{
+  margin: 1rem 0;
+}
+
+.signup-page-form input{
+  margin: 0.5rem 0;
+}
+
+.signup-buttons{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.submit-btn{
+  background-color:#0d6efd;
+	border-radius:5px;
+  border: none;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:8px 14px;
+	text-decoration:none;
+}
+
+.submit-btn:hover {
+	background-color:#476e9e;
+}
+.submit-btn:active {
+	position:relative;
+	top:1px;
+}
+
+.login-btn-back{
+  background-color: #198754;
+	border-radius:5px;
+  border: none;
+	display:inline-block;
+	cursor:pointer;
+	color: #ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:8px 14px;
+	text-decoration:none;
+}
+
+.login-btn-back:hover {
+	background-color:#1FAD6C;
+}
+.login-btn-back:active {
+	position:relative;
+	top:1px;
+}
+
+/* Upload */
+.upload-area {
+  border-style: dotted;
+  border-width: 5px;
+  border-color: #B7B7B7;
+  width: 30%;
+  margin: auto;
+}
+
+.upload-area h4 {
+  margin: 1rem 0 4rem;
+}
+
+.upload-area form {
+  margin-bottom: 1rem;
+}
+
+.upload_form label{
+  font-weight: bold;
+}
+
+#submit-btn {
+  margin-top: 0.5rem;
+}
+
+/* Mapping */
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.6rem;
+  height: auto;
+}
+
+.status {
+  width: 20%;
+  background-color: #f3f3f3;
+  padding: 1rem;
+  text-align: center;
+  min-height: 150vh;
+}
+
+.status:nth-child(even) {
+  background-color: #e9e9e96b;
+}
+
+.status h5 {
+  background-color: black;
+  color: #f3f3f3;
+  margin: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+.field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+  box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px,
+    rgba(15, 15, 15, 0.1) 0px 2px 4px;
+  border-radius: 4px;
+  padding: 0.4rem 1rem;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+/* Transactions */
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-header {
+  width: 100%;
+}
+
+.card-header h5{
+  margin: 3px;
+}
+
+.container input {
+  padding: 5px;
+}
+
+.ssot-headers{
+  background-color: red;
+}
+
+/* End */
+.thank-you-container{
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.outer-wrapper{
+  width: 32%;
+  margin: auto;
+  background-color: #F4F9F6;
+}
+
+.inner-wrapper{
+  padding: 1.5rem;
+}
+
+.thank-you-text{
+  margin: 2rem 0 2.5rem;
+}
+
+.thank-you-text h5{
+  margin-bottom: 1rem;
+}
+
+.contact-us{
+  margin-top: 2rem;
+  font-weight: 600;
+}
+
+.icon-colour{
+  color: #10B92E;
+}
+
+.remit-more-btn{
+  background-color:#0d6efd;
+	border-radius:5px;
+  border: none;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:8px 14px;
+	text-decoration:none;
+}
+
+.remit-more-btn:hover {
+	background-color:#476e9e;
+}
+.remit-more-btn:active {
+	position:relative;
+	top:1px;
+}
+
+.display-txn{
+  margin: 3rem 0;
+  text-align:center;
+}
+
+.txn-table{
+  margin: auto;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.txn-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+}
+
+.txn-table th,.txn-table td {
+    padding: 12px 15px;
+}
+
+/* Footer */
+footer {
+  margin: 1rem;
+}
+
+.footer-text {
+  text-align: center;
+}
