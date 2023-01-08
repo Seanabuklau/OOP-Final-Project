@@ -3,7 +3,7 @@ Digital Remittance Portal
 Our project aims to provide corporate users a convenient way to do cross-border funds transfer. By building a Single Source of Truth, our application allows corporate users (CU) to make transfers to various APIs with different mandatory fields.
 
 ## Technologies
-We built our UI using Bootstrap and Vue.js framework. We use Java and SpringBoot for the backend processes and MySQL for the database.
+We built our UI using Bootstrap and Vue.js framework. We use Java and SpringBoot for the backend processes and MySQL for the database. We utilise WAMP for developing and running our application code on our local machine. 
 
 ## Building a RESTful web service with Spring
 
