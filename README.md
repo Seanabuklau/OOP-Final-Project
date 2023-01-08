@@ -183,10 +183,10 @@ File Structure:
 
 ## Running the Application
 1. Clone this repository 
-2. Place the source repository inside wamp/www directory
-3. Change directory into IS442-OOP/DigitalRemittance
+2. Place the source repository inside the ```c:\wamp\www``` directory 
+3. Change directory into ```IS442-OOP/DigitalRemittance```
 4. To run the application, run the following command in a terminal window (in the complete) directory:
-./mvnw spring-boot:run or mvnw spring-boot:run or mvn spring-boot:run
+```./mvnw spring-boot:run``` or ```mvnw spring-boot:run``` or ```mvn spring-boot:run```
 
 ## UI/UX Features
 ### User Interface
