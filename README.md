@@ -7,7 +7,8 @@ We built our UI using Bootstrap and Vue.js framework. We use Java and SpringBoot
 
 ## Building a RESTful web service with Spring
 
-File Structure
+File Structure:
+```
 |-- .idea
 |-- Digital Remittance
 |   |-- .idea
@@ -178,6 +179,7 @@ File Structure
 |   |-- mvnw.cmd
 |   |-- pom.xml
 |   |-- READ.me
+```
 
 ## Running the Application
 Download and unzip the source repository for this guide, or clone it using Git: git clone [insert link]
@@ -213,7 +215,9 @@ When CU wants to send transaction, the key processes are:
 Big picture: We’re going to create a simple remittance service that maps the fields of a corporation to send transactions to various APIs. We’ll store company objects in a (H2 in-memory) database, and access them (via something called JPA). Then we’ll wrap that with something that will allow access over the internet (called the Spring MVC layer).
 
 Company
+```
 DigitalRemittance/src/main/java/g2t1/DigitalRemittance/Company
+```
 
 /Company.java defines Remittance Companies. 
 /CompanyRepository.java is an interface, extending JpaRepository. 
