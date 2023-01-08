@@ -1,6 +1,5 @@
-# IS442-OOP
-Digital Remittance Portal 
-Our project aims to provide corporate users a convenient way to do cross-border funds transfer. By building a Single Source of Truth, our application allows corporate users (CU) to make transfers to various APIs with different mandatory fields.
+# IS442-OOP 
+This project aims to provide corporate users (CU) with a convenient way to do cross-border remittance. By building a Single Source of Truth, this application allows corporate users to make transfers to various APIs with different mandatory fields.
 
 ## Technologies
 We built our UI using Bootstrap and Vue.js framework. We use Java and SpringBoot for the backend processes and MySQL for the database. We utilise WAMP for developing and running our application code on our local machine. 
