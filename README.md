@@ -1,10 +1,11 @@
 # IS442-OOP
 Digital Remittance Portal 
 Our project aims to provide corporate users a convenient way to do cross-border funds transfer. By building a Single Source of Truth, our application allows corporate users (CU) to make transfers to various APIs with different mandatory fields.
-Technologies
+
+## Technologies
 We built our UI using Bootstrap and Vue.js framework. We use Java and SpringBoot for the backend processes and MySQL for the database.
 
-Building a RESTful web service with Spring
+## Building a RESTful web service with Spring
 
 File Structure
 |-- .idea
@@ -177,38 +178,38 @@ File Structure
 |   |-- mvnw.cmd
 |   |-- pom.xml
 |   |-- READ.me
-Run the Application
+
+## Running the Application
 Download and unzip the source repository for this guide, or clone it using Git: git clone [insert link]
 Place the source repository inside wamp/www directory
 cd into IS442-OOP/DigitalRemittance
 To run the application, run the following command in a terminal window (in the complete) directory:
 ./mvnw spring-boot:run or mvnw spring-boot:run or mvn spring-boot:run
 
-UI Designs
+## UI/UX Features
+### User Interface
 Following Nielsen’s 10 heuristic evaluation, our team created a simple and clean UI:
-UI for Mapping (Onboarding)
+1. UI for Mapping (Onboarding)
+2. UI for Transaction
 
-UI for Transaction
-	
-
+### User Experience 
 Onboarding
-During onboarding, the key features are as follow:
-CU uploads CSV containing Corporate Fields
-Portal maps Corporate Fields to SSOT
-Portal saves Mapping configuration in MySQL
+The key features of onboarding are as follow:
+- CU uploads CSV containing Corporate Fields
+- Portal maps Corporate Fields to SSOT
+- Portal saves Mapping configuration in MySQL
 
 Transaction
 When CU wants to send transaction, the key processes are:
-CU uploads transactions using a CSV file
-App validates data uploaded 
-Returns status to UI
-App calls Sandbox for authentication
-App sends transaction to Sandbox
-Returns status to UI
-Store transactions in MySQL 
+- CU uploads transactions using a CSV file
+- App validates data uploaded 
+- Returns status to UI
+- App calls Sandbox for authentication
+- App sends transaction to Sandbox
+- Returns status to UI
+- Store transactions in MySQL 
 
-
-Diving into the Code
+## Driving into the Code
 Big picture: We’re going to create a simple remittance service that maps the fields of a corporation to send transactions to various APIs. We’ll store company objects in a (H2 in-memory) database, and access them (via something called JPA). Then we’ll wrap that with something that will allow access over the internet (called the Spring MVC layer).
 
 Company
